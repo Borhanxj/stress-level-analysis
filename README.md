@@ -32,3 +32,5 @@ These datasets will be complementory, updated and enriched.
 ## Tools & Technologies
 - Python
 - GitHub
+
+"This README was structured with guidance from ChatGPT to ensure clarity and completeness."
