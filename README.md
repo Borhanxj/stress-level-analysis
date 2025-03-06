@@ -18,6 +18,7 @@ We will collect publicly available data on:
 - **Stress-related statistics** from global health surveys
 - **Weather conditions** from climate databases
 - **Economic indicators** such as unemployment and salary data from government reports
+- 
 These datasets will be complementory, updated and enriched.
 
 
