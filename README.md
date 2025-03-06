@@ -15,9 +15,9 @@ Stress is something many of us experience, but it's also becoming a major public
 ## Data Sources & Collection Plan
 
 We will collect publicly available data on:
-- **Stress-related statistics** from global health surveys
-- **Weather conditions** from climate databases
-- **Economic indicators** such as unemployment and salary data from government reports
+- **Stress-related statistics**
+- **Weather conditions**
+- **Economic indicators**
 - 
 These datasets will be complementory, updated and enriched.
 
