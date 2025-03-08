@@ -75,25 +75,4 @@ I will collect and combine publicly available datasets to analyze stress factors
 
 ---
 
-## **Reproducibility**
-- **Data Format:** CSV files stored in `/data/` directory.
-- **Code Structure:**
-/stress-level-analysis ├── data/ # Raw & processed datasets ├── notebooks/ # Jupyter notebooks for EDA & modeling ├── src/ # Python scripts for data processing ├── models/ # Saved ML models ├── README.md # Project documentation ├── requirements.txt # List of dependencies
-
-- **Setup Instructions:**
-1. Clone the repository:
-   ```
-   git clone https://github.com/Borhanxj/stress-level-analysis.git
-   ```
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Run initial analysis:
-   ```
-   python src/data_preprocessing.py
-   ```
-
----
-
 _"This README was structured with guidance from ChatGPT to ensure clarity and completeness."_
