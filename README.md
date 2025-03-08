@@ -20,6 +20,27 @@ Stress is a major public health issue worldwide. Recent surveys have highlighted
 
 ---
 
+## **Dataset & Parameters**
+This project analyzes the relationship between stress levels and various socioeconomic and environmental factors. Below are the key parameters used:
+
+### **1️⃣ Stress-Level Indicators**
+- **Survey-based stress scores** (e.g., from Gallup or WHO)
+- **Mental health statistics** (e.g., anxiety, depression prevalence)
+
+### **2️⃣ Environmental Factors**
+- **Temperature** (°C) – Monthly average temperatures
+- **Precipitation** (mm) – Rainfall per region
+- **Air Quality Index (AQI)** – Pollution levels
+
+### **3️⃣ Socioeconomic Indicators**
+- **Unemployment rate (%)** – National/Regional job market conditions
+- **Salary distribution** – Median salaries and income inequality
+- **Cost of living index** – General affordability of daily life
+
+These parameters will be used for **data analysis, hypothesis testing, and machine learning models**.
+
+---
+
 ## **Data Sources & Collection Plan**
 I will collect and combine publicly available datasets to analyze stress factors.
 
