@@ -16,7 +16,12 @@ This project explores how external factors—including **economic indicators and
 ---
 
 ## **📌 Motivation**
-Stress is a global public health concern. Recent surveys have highlighted rising stress levels, particularly among younger populations. Countries like **South Korea and Germany** report some of the **highest stress levels** worldwide. Economic instability and climate conditions might play a role, and this project aims to explore these connections.  
+Stress is something many of us experience, but it's also becoming a major public health issue worldwide.  
+A recent survey ranked it just behind **cancer and mental health** as one of the biggest concerns, with countries like **South Korea and Turkey** reporting especially high levels.  
+Younger people are often more affected, but even a significant number of older adults struggle with stress.  
+This makes me wonder—**what’s driving this rise in stress?**  
+Could factors like **economic instability or climate conditions** play a role?  
+**That’s what I want to explore in this project.**  
 ([Statista](https://www.statista.com/statistics/1057961/the-most-stressed-out-populations-worldwide/?utm_source=chatgpt.com))
 
 ---
@@ -110,10 +115,5 @@ Based on prior research and logical assumptions, we expect the following:
 | **May 30** | Final submission (GitHub repository) |
 
 ---
-
-## **📌 Next Steps**
-✅ **Finalize dataset collection** (done)  
-✅ **Extract data from PDFs** (in progress)  
-🔜 **Start data preprocessing & exploratory analysis**  
 
 📌 **_"This README was structured with guidance from ChatGPT to ensure clarity and completeness."_**
