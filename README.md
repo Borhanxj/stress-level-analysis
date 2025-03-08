@@ -26,7 +26,7 @@ This analysis will focus on **comparing stress levels** between different region
 ### **Regions of Interest**
 - **Primary Focus Countries:** 🇺🇸 **United States**, 🇩🇪 **Germany**, 🇰🇷 **South Korea**  
   - These countries were selected due to their **abundant and high-quality datasets** on stress, economics, and environment.
-- **Additional Regions for Comparison:** 🌍 If data is available, we may include **France, Canada, or Australia**.
+- **Additional Regions for Comparison:** 🌍 If data is available, I may include **France, Canada, or Australia**.
 
 ### **Comparison Factors**
 - **Cross-country comparison:** How do stress levels differ between different economic models (e.g., USA vs. Germany vs. South Korea)?
