@@ -1,102 +1,107 @@
 # **Stress Level Analysis Based on Socioeconomic and Environmental Factors**
 
-A data science project analyzing the relationship between stress levels and socioeconomic & environmental factors such as temperature, rainfall, unemployment rates, salary distribution, demographics, and more. Using statistical analysis and machine learning to uncover patterns and predictive insights.
+A data science project analyzing the relationship between **stress levels** and **socioeconomic & environmental factors** such as temperature, unemployment rates, salary distribution, cost of living, and demographics. Using statistical analysis and machine learning to uncover patterns and predictive insights.
 
 ---
 
-## **Project Overview**
-This project explores how external factors—including economic indicators and climate conditions—impact stress levels. By analyzing data from multiple sources, I aim to identify key contributors to stress and develop predictive insights.
+## **📌 Project Overview**
+This project explores how external factors—including **economic indicators and climate conditions**—impact stress levels. By analyzing data from multiple sources, I aim to **identify key contributors to stress and develop predictive models**.
 
 ### **Key Research Questions**
-- How do unemployment rates and salary distribution impact reported stress levels?
-- Do environmental conditions (temperature, rainfall, pollution) correlate with higher stress levels?
-- Are there regional or demographic differences in stress patterns?
+- How do **unemployment rates and salary distribution** impact reported stress levels?
+- Do **environmental conditions** (temperature, rainfall, pollution) correlate with higher stress levels?
+- Are there **regional or demographic differences** in stress patterns?
+- Does the **cost of living** influence mental health outcomes?
 
 ---
 
-## **Motivation**
-Stress is a major public health issue worldwide. Recent surveys have highlighted increasing stress levels, particularly among younger populations. Countries like South Korea and Germany report some of the highest stress levels globally. Economic instability and climate conditions might play a role, and this project aims to explore these connections.
+## **📌 Motivation**
+Stress is a global public health concern. Recent surveys have highlighted rising stress levels, particularly among younger populations. Countries like **South Korea and Germany** report some of the **highest stress levels** worldwide. Economic instability and climate conditions might play a role, and this project aims to explore these connections.  
 ([Statista](https://www.statista.com/statistics/1057961/the-most-stressed-out-populations-worldwide/?utm_source=chatgpt.com))
 
 ---
 
-## **Project Scope**
-This analysis will focus on **comparing stress levels** between different regions based on socioeconomic and environmental factors.
+## **📌 Project Scope**
+### **Country as a Parameter**
+Instead of limiting the analysis to specific countries, this project considers **all available regions** in the dataset and uses **country as a parameter** in analysis. However, **comparisons will focus on**:
+- 🇺🇸 **United States**
+- 🇩🇪 **Germany**
+- 🇰🇷 **South Korea**
 
-### **Regions of Interest**
-- **Primary Focus Countries:** 🇺🇸 **United States**, 🇩🇪 **Germany**, 🇰🇷 **South Korea**  
-  - These countries were selected due to their **abundant and high-quality datasets** on stress, economics, and environment.
-- **Additional Regions for Comparison:** 🌍 If data is available, I may include **France, Canada, or Australia**.
+This approach provides **flexibility** while still allowing deeper regional insights.
 
 ### **Comparison Factors**
-- **Cross-country comparison:** How do stress levels differ between different economic models (e.g., USA vs. Germany vs. South Korea)?
-- **Urban vs. Rural Stress:** Do people in urban areas report higher stress due to economic and environmental factors?
-- **Age & Gender Trends:** Are younger people more stressed across different cultures?
-- **Environmental Influence:** Does extreme weather (e.g., high temperatures, pollution) correlate with stress levels?
+- **Economic Factors:** Salary distribution, unemployment, cost of living.
+- **Environmental Factors:** Temperature, precipitation, air pollution.
+- **Demographic Trends:** Stress levels by age, gender, and location.
 
-This scope ensures a **focused yet flexible approach**, allowing for additional regions to be analyzed if data is available.
-
----
-
-## **Dataset & Parameters**
-This project analyzes the relationship between stress levels and various socioeconomic and environmental factors. Below are the key parameters used:
-
-### **1️⃣ Stress-Level Indicators**
-- **Survey-based stress scores** (e.g., from Gallup or WHO)
-- **Mental health statistics** (e.g., anxiety, depression prevalence)
-
-### **2️⃣ Environmental Factors**
-- **Temperature** (°C) – Monthly average temperatures
-- **Precipitation** (mm) – Rainfall per region
-- **Air Quality Index (AQI)** – Pollution levels
-
-### **3️⃣ Socioeconomic Indicators**
-- **Unemployment rate (%)** – National/Regional job market conditions
-- **Salary distribution** – Median salaries and income inequality
-- **Cost of living index** – General affordability of daily life
-
-These parameters will be used for **data analysis, hypothesis testing, and machine learning models**.
+This ensures a **broad but structured** analysis.
 
 ---
 
-## **Data Sources & Collection Plan**
-I will collect and combine publicly available datasets to analyze stress factors.
+## **📌 Datasets & Parameters**
+This project integrates multiple datasets to analyze stress levels in relation to external factors.
 
-### **Planned Datasets:**
-1. **Stress-related statistics**
-   - Global stress indices (e.g., WHO, Gallup)
-   - Mental health surveys
+### **1️⃣ Mental Health & Stress Dataset**
+📂 **File:** `Stress_Data.csv`  
+📌 **Source:** Kaggle Mental Health Dataset  
+📌 **Includes:** Stress levels, mental health conditions, work-life balance.  
+📌 **Covers:** Multiple countries (Country is a parameter).  
 
-2. **Weather Conditions**
-   - Temperature, precipitation, pollution (NOAA, NASA, local meteorological data)
+### **2️⃣ Gallup Stress Survey**
+📂 **File:** `Gallup_Stress_Report_2024.pdf`  
+📌 **Source:** Gallup Global Emotions Report  
+📌 **Includes:** Global stress trends based on survey data.  
+📌 **Covers:** Multiple countries.  
 
-3. **Economic Indicators**
-   - Unemployment rates (World Bank, IMF)
-   - Salary distribution (OECD, National Statistics)
-   - Cost of living indices
+### **3️⃣ Weather & Climate Dataset**
+📂 **File:** `Weather_Data.csv`  
+📌 **Source:** Kaggle Weather Dataset  
+📌 **Includes:** Temperature, precipitation, pollution levels.  
+📌 **Covers:** Multiple countries (Country is a parameter).  
 
-### **Data Enrichment Plan**
-- Cross-referencing stress levels with socioeconomic and weather data.
-- Aggregating data at regional/national levels.
-- Handling missing values and inconsistencies.
+### **4️⃣ Economic Indicators**
+#### **a. Quality of Life (U.S. Specific)**
+📂 **File:** `Quality_of_Life_US.csv`  
+📌 **Source:** Kaggle - U.S. Statewise Quality of Life Index  
+📌 **Includes:** Cost of living, employment rates, and economic conditions.  
+📌 **Covers:** United States (state-level).  
+
+#### **b. Global Economic Data**
+📂 **File:** `World_Economic_Data.csv`  
+📌 **Source:** Kaggle - World Data 2023  
+📌 **Includes:** GDP, income levels, unemployment rates.  
+📌 **Covers:** Multiple countries (Country is a parameter).  
+
+#### **c. Income Distribution (OECD)**
+📂 **File:** `OECD_Income_Data.pdf`  
+📌 **Source:** OECD Income Distribution Database  
+📌 **Includes:** Salary distribution, income inequality.  
+📌 **Covers:** Multiple countries (requires data extraction).  
 
 ---
 
-## **Methodology**
-1. **Exploratory Data Analysis (EDA)**
-   - Data cleaning, preprocessing, and visualization.
-   - Correlation analysis to identify patterns.
+## **📌 Hypotheses**
+Based on prior research and logical assumptions, we expect the following:
 
-2. **Hypothesis Testing & Statistical Analysis**
-   - T-tests, ANOVA, and regression models.
+### **1️⃣ Economic Factors & Stress**
+- Higher **unemployment rates** → **Higher stress levels**.
+- Lower **salary distribution** or **income inequality** → **Higher stress levels**.
+- Higher **cost of living** → **More financial stress**, leading to increased stress levels.
 
-3. **Machine Learning Approaches**
-   - Clustering (e.g., K-Means) for stress pattern grouping.
-   - Regression (e.g., Random Forest, XGBoost) for predicting stress levels.
+### **2️⃣ Environmental Factors & Stress**
+- Higher **temperature extremes** (heat waves, extreme cold) → **Increased stress**.
+- Higher **pollution levels** → **Negative mental health outcomes**.
+- **Regions with frequent weather fluctuations** → Higher reported stress.
+
+### **3️⃣ Demographic Trends**
+- Younger age groups (18-35) → **Higher stress levels** (career, financial instability).
+- Urban residents → More stress compared to rural populations.
+- Women → Report **higher stress levels** than men (as found in prior studies).
 
 ---
 
-## **Project Timeline**
+## **📌 Project Timeline**
 | Date | Task |
 |------|------|
 | **March 10** | Submit project proposal (GitHub README) |
@@ -106,4 +111,9 @@ I will collect and combine publicly available datasets to analyze stress factors
 
 ---
 
-_"This README was structured with guidance from ChatGPT to ensure clarity and completeness."_
+## **📌 Next Steps**
+✅ **Finalize dataset collection** (done)  
+✅ **Extract data from PDFs** (in progress)  
+🔜 **Start data preprocessing & exploratory analysis**  
+
+📌 **_"This README was structured with guidance from ChatGPT to ensure clarity and completeness."_**
