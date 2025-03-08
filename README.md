@@ -15,8 +15,26 @@ This project explores how external factors—including economic indicators and c
 ---
 
 ## **Motivation**
-Stress is a major public health issue worldwide. Recent surveys have highlighted increasing stress levels, particularly among younger populations. Countries like South Korea and Turkey report some of the highest stress levels globally. Economic instability and climate conditions might play a role, and this project aims to explore these connections.
+Stress is a major public health issue worldwide. Recent surveys have highlighted increasing stress levels, particularly among younger populations. Countries like South Korea and Germany report some of the highest stress levels globally. Economic instability and climate conditions might play a role, and this project aims to explore these connections.
 ([Statista](https://www.statista.com/statistics/1057961/the-most-stressed-out-populations-worldwide/?utm_source=chatgpt.com))
+
+---
+
+## **Project Scope**
+This analysis will focus on **comparing stress levels** between different regions based on socioeconomic and environmental factors.
+
+### **Regions of Interest**
+- **Primary Focus Countries:** 🇺🇸 **United States**, 🇩🇪 **Germany**, 🇰🇷 **South Korea**  
+  - These countries were selected due to their **abundant and high-quality datasets** on stress, economics, and environment.
+- **Additional Regions for Comparison:** 🌍 If data is available, we may include **France, Canada, or Australia**.
+
+### **Comparison Factors**
+- **Cross-country comparison:** How do stress levels differ between different economic models (e.g., USA vs. Germany vs. South Korea)?
+- **Urban vs. Rural Stress:** Do people in urban areas report higher stress due to economic and environmental factors?
+- **Age & Gender Trends:** Are younger people more stressed across different cultures?
+- **Environmental Influence:** Does extreme weather (e.g., high temperatures, pollution) correlate with stress levels?
+
+This scope ensures a **focused yet flexible approach**, allowing for additional regions to be analyzed if data is available.
 
 ---
 
@@ -85,14 +103,6 @@ I will collect and combine publicly available datasets to analyze stress factors
 | **April 18** | Collect and clean data, perform EDA |
 | **May 23** | Implement machine learning models |
 | **May 30** | Final submission (GitHub repository) |
-
----
-
-## **Tools & Technologies**
-- **Programming Language:** Python  
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
-- **Version Control:** GitHub  
-- **Data Sources:** WHO, NOAA, World Bank, OECD, NASA  
 
 ---
 
