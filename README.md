@@ -87,22 +87,13 @@ This project integrates multiple datasets to analyze stress levels in relation t
 ---
 
 ## **📌 Hypotheses**
-Based on prior research and logical assumptions, we expect the following:
+1️⃣ **Air Pollution & Extreme Weather → Increased Stress**  
+   - Regions with **higher air pollution** or **frequent extreme weather (heat waves, storms, etc.)** may have **higher stress levels**, possibly due to **health concerns, discomfort, and disruptions in daily life**.  
 
-### **1️⃣ Economic Factors & Stress**
-- Higher **unemployment rates** → **Higher stress levels**.
-- Lower **salary distribution** or **income inequality** → **Higher stress levels**.
-- Higher **cost of living** → **More financial stress**, leading to increased stress levels.
+2️⃣ **Social Media & Stress Perception**  
+   - **Higher social media usage → Increased reported stress**  
+     - Countries with **higher social media engagement** may show **higher self-reported stress levels**, possibly due to **information overload, comparison anxiety, or exposure to negative news**.  
 
-### **2️⃣ Environmental Factors & Stress**
-- Higher **temperature extremes** (heat waves, extreme cold) → **Increased stress**.
-- Higher **pollution levels** → **Negative mental health outcomes**.
-- **Regions with frequent weather fluctuations** → Higher reported stress.
-
-### **3️⃣ Demographic Trends**
-- Younger age groups (18-35) → **Higher stress levels** (career, financial instability).
-- Urban residents → More stress compared to rural populations.
-- Women → Report **higher stress levels** than men (as found in prior studies).
 
 ---
 
