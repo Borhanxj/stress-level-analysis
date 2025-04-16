@@ -86,23 +86,24 @@ This project integrates multiple datasets to analyze stress levels in relation t
 
 ---
 
-## 📌 Hypotheses based on visualizations
+## 📌 Hypotheses Based on Visualizations
 
-### 1️⃣ Social Media Expression Mirrors Psychological Strain  
+### 1️⃣ Social Media Activity Reflects Emotional State  
 📂 **Dataset:** `social_media_stress.csv`  
 📊 **Visualization:** Violin plots — Likes, Comments & DMs vs Emotion
 
-> Users who express **anxiety** or **sadness** tend to engage more through **DMs and comments** rather than passive actions like liking.  
-> This may indicate a higher **emotional need for interaction**, suggesting that the **type of engagement**, not just frequency, reflects underlying stress.
+> People who feel **anxious** or **sad** are more likely to send **DMs** or leave **comments** instead of just liking posts.  
+> This might mean that people with negative emotions try to interact more with others online. It also shows that the **way people use social media** can tell us about their emotional state — not just how much time they spend on it.
 
 ---
 
-### 2️⃣ Culture May Buffer Against Economic Stress  
+### 2️⃣ Culture Might Help People Handle Economic Stress  
 📂 **Dataset:** `gallup_emotion_data_2023.csv`, `oecd_income_sample.csv`  
 📊 **Visualization:** Emotion Heatmap + OECD Income Overlay
 
-> Some **low-income countries** (e.g., **Vietnam**) report **high positive emotional scores**, indicating that **cultural or social resilience** may **offset the psychological impact** of economic hardship.  
-> This suggests that **income alone does not predict stress**, and **cultural context plays a critical role** in emotional well-being.
+> Some **low-income countries** (like **Vietnam**) still show high levels of **positive emotions**.  
+> This suggests that **cultural or social support** in these countries might help people feel better, even if the economy isn’t strong.  
+> So, **income alone doesn’t explain stress levels** — the environment people live in also matters a lot.
 
 ---
 
