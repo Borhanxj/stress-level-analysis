@@ -86,13 +86,23 @@ This project integrates multiple datasets to analyze stress levels in relation t
 
 ---
 
-## **📌 Hypotheses**
-1️⃣ **Air Pollution & Extreme Weather → Increased Stress**  
-   - Regions with **higher air pollution** or **frequent extreme weather (heat waves, storms, etc.)** may have **higher stress levels**, possibly due to **health concerns, discomfort, and disruptions in daily life**.  
+## 📌 Hypotheses based on visualizations
 
-2️⃣ **Social Media & Stress Perception**  
-   - **Higher social media usage → Increased reported stress**  
-     - Countries with **higher social media engagement** may show **higher self-reported stress levels**, possibly due to **information overload, comparison anxiety, or exposure to negative news**.  
+### 1️⃣ Social Media Expression Mirrors Psychological Strain  
+📂 **Dataset:** `social_media_stress.csv`  
+📊 **Visualization:** Violin plots — Likes, Comments & DMs vs Emotion
+
+> Users who express **anxiety** or **sadness** tend to engage more through **DMs and comments** rather than passive actions like liking.  
+> This may indicate a higher **emotional need for interaction**, suggesting that the **type of engagement**, not just frequency, reflects underlying stress.
+
+---
+
+### 2️⃣ Culture May Buffer Against Economic Stress  
+📂 **Dataset:** `gallup_emotion_data_2023.csv`, `oecd_income_sample.csv`  
+📊 **Visualization:** Emotion Heatmap + OECD Income Overlay
+
+> Some **low-income countries** (e.g., **Vietnam**) report **high positive emotional scores**, indicating that **cultural or social resilience** may **offset the psychological impact** of economic hardship.  
+> This suggests that **income alone does not predict stress**, and **cultural context plays a critical role** in emotional well-being.
 
 ---
 
