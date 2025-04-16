@@ -148,18 +148,18 @@ We examined which countries in the dataset have the highest concentration of ind
 ![Country Stress Bar Chart](eda/country_stress_distribution_fixed.png)
 
 ---
-### 🏥 EDA: Physician Availability vs High Stress Levels
+### 🔗 EDA: Correlation Between Stress and Economic Indicators
 
-This plot compares the number of physicians per 1,000 people to the proportion of individuals reporting **high stress levels**.
+We analyzed how the proportion of people reporting **high stress** correlates with various economic and health indicators across countries.
 
-📄 **Code file**: [`eda_physicians_vs_stress.py`](eda/eda_physicians_vs_stress.py)
+📄 **Code file**: [`eda_stress_correlation.py`](eda/eda_stress_correlation.py)
 
 🧠 **Insights:**
-- Countries with **fewer physicians per capita** (like India) report higher stress
-- Countries like **Germany** and **Australia** with more physicians show lower high-stress proportions
-- Healthcare access might play a key role in national stress management
+- High stress levels show **negative correlation** with **life expectancy** and **physician availability**
+- Stress is **positively correlated** with **unemployment** and **CPI (inflation)**
+- Strong economic and healthcare systems may contribute to reduced national stress
 
-![Physician Density vs High Stress](eda/physicians_vs_stress.png)
+![Stress Correlation Heatmap](eda/stress_correlation_heatmap.png)
 
 ---
 
