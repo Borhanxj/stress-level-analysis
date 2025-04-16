@@ -98,16 +98,44 @@ This project integrates multiple datasets to analyze stress levels in relation t
 
 ## **📊 Data Collection & EDA**
 
-### ✅ Dataset Added:
-- `social_media_stress.csv` (collected from Kaggle)
-- Contains user-level data: age, gender, platform used, social media activity, and dominant emotional state
+### 🧼 Data Cleaning Summary
+
+Before performing exploratory data analysis (EDA), we applied structured cleaning operations across all datasets to ensure consistency and reliability:
+
+#### ✅ `social_media_stress.csv`
+- Converted `Age` column to numeric format
+- Removed rows with missing or invalid age values
+- Cleaned dataset used to analyze usage time and engagement patterns by emotion
+
+#### ✅ `Stress_Data.csv`
+- Preserved full data but grouped by `Country` to calculate proportions of stress levels (`Low`, `Medium`, `High`)
+- Used for country-level comparisons and merged with economic indicators
+
+#### ✅ `World_Economic_Data.csv`
+- Removed percentage symbols and commas from fields such as `Unemployment rate`, `CPI`, `Life expectancy`, and `Tax revenue (%)`
+- Converted cleaned columns to numeric types
+- Prepared for merging with stress summaries to enable correlation analysis
+
+#### ✅ `Gallup_Stress_Report_2024.pdf`
+- Extracted emotional indicators like `Stress`, `Worry`, `Anger`, `Sadness`, `Loneliness` and global experience indices
+- Manually converted structured values into tabular form
+- Saved as `gallup_emotion_data_2023.csv` for further use
+
+#### ✅ `OECD_Income_Data.pdf`
+- Sample disposable income values were extracted for selected countries
+- Used to support high-level comparison between income and emotional health patterns
 
 ---
 
-### 🧼 Cleaning Summary:
-- Converted `Age` column to numeric
-- Dropped 1 row with missing age
-- Final dataset: **102 records**, 10 features
+### 🔗 Merged Dataset Overview
+
+We created a merged dataset combining **country-level stress proportions** from `Stress_Data.csv` with **economic indicators** from `World_Economic_Data.csv`.
+
+📄 **File:** `merged_stress_economics.csv`  
+🧩 **Purpose:** To analyze how **economic and healthcare metrics** (e.g., life expectancy, unemployment, physician density) correlate with the **proportion of people reporting high stress**.
+
+This merged dataset was the foundation for our **correlation heatmap** and multiple cross-variable analyses.
+
 
 ---
 
