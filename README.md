@@ -148,18 +148,18 @@ We examined which countries in the dataset have the highest concentration of ind
 ![Country Stress Bar Chart](eda/country_stress_distribution_fixed.png)
 
 ---
-### 💉 EDA: Health Spending vs Life Expectancy (with Stress Context)
+### 🏥 EDA: Physician Availability vs High Stress Levels
 
-We visualized how **out-of-pocket health expenditure** correlates with **life expectancy**, scaled by the percentage of people reporting **high stress levels**.
+This plot compares the number of physicians per 1,000 people to the proportion of individuals reporting **high stress levels**.
 
-📄 **Code file**: [`eda_health_vs_life_stress.py`](eda/eda_health_vs_life_stress.py)
+📄 **Code file**: [`eda_physicians_vs_stress.py`](eda/eda_physicians_vs_stress.py)
 
 🧠 **Insights:**
-- Countries like **India** with higher out-of-pocket costs show lower life expectancy and higher stress
-- **Australia** and **Canada** show high life expectancy with lower stress levels
-- Health investment may reduce national stress burdens
+- Countries with **fewer physicians per capita** (like India) report higher stress
+- Countries like **Germany** and **Australia** with more physicians show lower high-stress proportions
+- Healthcare access might play a key role in national stress management
 
-![Health vs Life Expectancy](eda/health_vs_life_stress.png)
+![Physician Density vs High Stress](eda/physicians_vs_stress.png)
 
 ---
 
