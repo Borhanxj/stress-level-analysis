@@ -162,6 +162,20 @@ We analyzed how the proportion of people reporting **high stress** correlates wi
 ![Stress Correlation Heatmap](eda/stress_correlation_heatmap.png)
 
 ---
+### 🧠 EDA: Emotional Metrics by Country (Gallup 2023)
+
+We visualized five key emotional indicators from Gallup’s global survey: **stress, worry, anger, sadness, and loneliness**.
+
+📄 **Code file**: [`eda_emotion_heatmap.py`](eda/eda_emotion_heatmap.py)
+
+🧠 **Insights:**
+- **Israel** and **Guinea** show high levels across multiple emotions
+- **Vietnam** and **Canada** report notably low emotional negativity
+- The heatmap allows easy country-to-country emotional comparison
+
+![Emotion Heatmap Table](eda/emotion_heatmap_table.png)
+
+---
 
 
 ## **📌 Project Timeline**
