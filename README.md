@@ -138,14 +138,14 @@ We explored how different types of social media engagement (likes, comments, and
 
 We examined which countries in the dataset have the highest concentration of individuals reporting **high stress levels**.
 
-📄 **Code file**: [`eda_country_stress.py`](eda/eda_country_stress.py)
+📄 **Code file**: [`eda_country_stress_fixed.py`](eda/eda_country_stress_fixed.py)
 
 🧠 **Insights:**
 - Countries like **India**, **USA**, and **Germany** report the highest number of high-stress individuals
 - Most countries also show a fairly even distribution across all stress levels
 - Cultural or socioeconomic factors may be influencing this spread
 
-![Country Stress Bar Chart](eda/country_stress_distribution.png)
+![Country Stress Bar Chart](eda/country_stress_distribution_fixed.png)
 
 ---
 
