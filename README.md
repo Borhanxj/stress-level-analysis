@@ -141,6 +141,8 @@ This merged dataset was the foundation for our **correlation heatmap** and multi
 
 ### 📊 EDA: Daily Usage Time vs Dominant Emotion
 
+📂 **Dataset used:** `social_media_stress.csv`
+
 We explored how much time users spend on social media and how it relates to their dominant emotional state.
 
 ![Boxplot: Daily Usage Time by Emotion](eda/boxplot_usage_emotion.png)
@@ -148,6 +150,8 @@ We explored how much time users spend on social media and how it relates to thei
 ---
 
 ### 🧪 EDA: Likes, Comments & DMs vs Emotion
+
+📂 **Dataset used:** `social_media_stress.csv`
 
 We explored how different types of social media engagement (likes, comments, and messages) vary based on users' dominant emotional state using violin plots.
 
@@ -164,6 +168,8 @@ We explored how different types of social media engagement (likes, comments, and
 
 ### 🌍 EDA: Stress Level Distribution by Country
 
+📂 **Dataset used:** `Stress_Data.csv`
+
 We examined which countries in the dataset have the highest concentration of individuals reporting **high stress levels**.
 
 📄 **Code file**: [`eda_country_stress_fixed.py`](eda/eda_country_stress_fixed.py)
@@ -179,6 +185,9 @@ We examined which countries in the dataset have the highest concentration of ind
 
 ### 🔗 EDA: Correlation Between Stress and Economic Indicators
 
+📂 **Datasets used:** `Stress_Data.csv` + `World_Economic_Data.csv`  
+📄 **Merged file:** `merged_stress_economics.csv`
+
 We analyzed how the proportion of people reporting **high stress** correlates with various economic and health indicators across countries.
 
 📄 **Code file**: [`eda_stress_correlation.py`](eda/eda_stress_correlation.py)
@@ -193,6 +202,8 @@ We analyzed how the proportion of people reporting **high stress** correlates wi
 ---
 
 ### 🧠 EDA: Emotional Metrics by Country (Gallup 2023)
+
+📂 **Dataset used:** `Gallup_Stress_Report_2024.pdf` → structured as `gallup_emotion_data_2023.csv`
 
 We visualized five key emotional indicators from Gallup’s global survey: **stress, worry, anger, sadness, and loneliness**.
 
