@@ -177,6 +177,26 @@ We visualized five key emotional indicators from Gallup’s global survey: **str
 
 ---
 
+## ✅ Conclusion & Project Insights
+
+In this project, we explored the complex relationship between **stress levels**, **emotional well-being**, and **economic and behavioral factors** using a multi-layered data approach.
+
+### 🔍 Key Takeaways:
+- **Personal behavior** (like social media usage) strongly reflected emotional state, especially in patterns of likes, posts, and messages.
+- **Country-level stress** was impacted by lifestyle factors like **work hours** and **sleep** duration.
+- **Economic indicators** such as **physician availability** and **tax revenue** showed meaningful correlations with national stress levels.
+- **Gallup emotion data** revealed consistent patterns between emotions like **sadness, stress, and loneliness**, with visualization highlights including a correlation heatmap and emotional matrix.
+
+### 📦 Datasets Used:
+- `social_media_stress.csv`  
+- `Stress_Data.csv`  
+- `World_Economic_Data.csv`  
+- `Gallup_Stress_Report_2024.pdf`  
+
+This multi-source integration allowed a holistic view of stress — from the individual level to global trends — offering deeper insight into one of today’s most relevant mental health concerns.
+
+---
+
 
 ## **📌 Project Timeline**
 | Date | Task |
