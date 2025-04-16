@@ -116,8 +116,9 @@ This project integrates multiple datasets to analyze stress levels in relation t
 
 We explored how much time users spend on social media and how it relates to their dominant emotional state.
 
-```python
-# See full code in eda/eda_social_media.py
+![Boxplot: Daily Usage Time by Emotion](eda/boxplot_usage_emotion.png)
+
+---
 
 
 ## **📌 Project Timeline**
