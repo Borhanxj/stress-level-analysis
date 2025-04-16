@@ -97,6 +97,29 @@ This project integrates multiple datasets to analyze stress levels in relation t
 
 ---
 
+## Data Collection & EDA
+
+### ✅ Dataset Added:
+- `social_media_stress.csv` (collected from Kaggle)
+- Contains user-level data: age, gender, platform used, social media activity, and dominant emotional state
+
+---
+
+### 🧼 Cleaning Summary:
+- Converted `Age` column to numeric
+- Dropped 1 row with missing age
+- Final dataset: **102 records**, 10 features
+
+---
+
+### 📊 EDA: Daily Usage Time vs Dominant Emotion
+
+We explored how much time users spend on social media and how it relates to their dominant emotional state.
+
+```python
+# See full code in eda/eda_social_media.py
+
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
