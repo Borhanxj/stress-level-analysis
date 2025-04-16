@@ -120,6 +120,21 @@ We explored how much time users spend on social media and how it relates to thei
 
 ---
 
+### 🧪 EDA: Likes, Comments & DMs vs Emotion
+
+We explored how different types of social media engagement (likes, comments, and messages) vary based on users' dominant emotional state using violin plots.
+
+📄 **Code file**: [`eda_social_engagement.py`](eda/eda_social_engagement.py)
+
+🧠 **Insights:**
+- **Happiness** and **Anxiety** show broader spread in likes and message counts
+- **Anger** and **Sadness** are associated with more DMs and comment activity
+- Emotional state is reflected in the quantity and variability of online engagement
+
+![Violin Plot - Engagement vs Emotion](eda/violin_engagement_emotion.png)
+
+---
+
 
 ## **📌 Project Timeline**
 | Date | Task |
