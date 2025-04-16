@@ -148,6 +148,20 @@ We examined which countries in the dataset have the highest concentration of ind
 ![Country Stress Bar Chart](eda/country_stress_distribution_fixed.png)
 
 ---
+### 💉 EDA: Health Spending vs Life Expectancy (with Stress Context)
+
+We visualized how **out-of-pocket health expenditure** correlates with **life expectancy**, scaled by the percentage of people reporting **high stress levels**.
+
+📄 **Code file**: [`eda_health_vs_life_stress.py`](eda/eda_health_vs_life_stress.py)
+
+🧠 **Insights:**
+- Countries like **India** with higher out-of-pocket costs show lower life expectancy and higher stress
+- **Australia** and **Canada** show high life expectancy with lower stress levels
+- Health investment may reduce national stress burdens
+
+![Health vs Life Expectancy](eda/health_vs_life_stress.png)
+
+---
 
 
 ## **📌 Project Timeline**
