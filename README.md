@@ -94,10 +94,9 @@ This project integrates multiple datasets to analyze stress levels in relation t
    - **Higher social media usage → Increased reported stress**  
      - Countries with **higher social media engagement** may show **higher self-reported stress levels**, possibly due to **information overload, comparison anxiety, or exposure to negative news**.  
 
-
 ---
 
-## Data Collection & EDA
+## **📊 Data Collection & EDA**
 
 ### ✅ Dataset Added:
 - `social_media_stress.csv` (collected from Kaggle)
@@ -134,6 +133,7 @@ We explored how different types of social media engagement (likes, comments, and
 ![Violin Plot - Engagement vs Emotion](eda/violin_engagement_emotion.png)
 
 ---
+
 ### 🌍 EDA: Stress Level Distribution by Country
 
 We examined which countries in the dataset have the highest concentration of individuals reporting **high stress levels**.
@@ -148,6 +148,7 @@ We examined which countries in the dataset have the highest concentration of ind
 ![Country Stress Bar Chart](eda/country_stress_distribution_fixed.png)
 
 ---
+
 ### 🔗 EDA: Correlation Between Stress and Economic Indicators
 
 We analyzed how the proportion of people reporting **high stress** correlates with various economic and health indicators across countries.
@@ -162,6 +163,7 @@ We analyzed how the proportion of people reporting **high stress** correlates wi
 ![Stress Correlation Heatmap](eda/stress_correlation_heatmap.png)
 
 ---
+
 ### 🧠 EDA: Emotional Metrics by Country (Gallup 2023)
 
 We visualized five key emotional indicators from Gallup’s global survey: **stress, worry, anger, sadness, and loneliness**.
@@ -177,27 +179,6 @@ We visualized five key emotional indicators from Gallup’s global survey: **str
 
 ---
 
-## ✅ Conclusion & Project Insights
-
-In this project, we explored the complex relationship between **stress levels**, **emotional well-being**, and **economic and behavioral factors** using a multi-layered data approach.
-
-### 🔍 Key Takeaways:
-- **Personal behavior** (like social media usage) strongly reflected emotional state, especially in patterns of likes, posts, and messages.
-- **Country-level stress** was impacted by lifestyle factors like **work hours** and **sleep** duration.
-- **Economic indicators** such as **physician availability** and **tax revenue** showed meaningful correlations with national stress levels.
-- **Gallup emotion data** revealed consistent patterns between emotions like **sadness, stress, and loneliness**, with visualization highlights including a correlation heatmap and emotional matrix.
-
-### 📦 Datasets Used:
-- `social_media_stress.csv`  
-- `Stress_Data.csv`  
-- `World_Economic_Data.csv`  
-- `Gallup_Stress_Report_2024.pdf`  
-
-This multi-source integration allowed a holistic view of stress — from the individual level to global trends — offering deeper insight into one of today’s most relevant mental health concerns.
-
----
-
-
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
@@ -208,4 +189,4 @@ This multi-source integration allowed a holistic view of stress — from the ind
 
 ---
 
-📌 **_"This README was structured with guidance from ChatGPT to ensure clarity and completeness."_**
+📌 _**This README was structured with guidance from ChatGPT to ensure clarity and completeness.**_
