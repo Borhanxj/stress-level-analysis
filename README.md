@@ -228,6 +228,41 @@ We visualized five key emotional indicators from Gallup’s global survey: **str
 > So, **income alone doesn’t explain stress levels** — the environment people live in also matters a lot.
 
 ---
+## 🧪 Hypothesis Testing
+
+As part of the exploratory phase, we performed statistical hypothesis testing using **independent samples t-tests** to check whether observed differences in our data were statistically significant.
+
+---
+
+### 🧪 Hypothesis Test 1: Social Media Expression and Emotional State
+
+📂 **Dataset used:** `social_media_stress.csv`  
+📁 **Code file:** [`hypothesis1_social_media_test.py`](eda/hypothesis1_social_media_test.py)  
+🧪 **Method:** Independent Samples t-Test
+
+---
+
+#### 📌 Hypothesis
+- **H₀ (Null Hypothesis):** There is no difference in DMs or comments between users who report Anxiety or Sadness and those who don’t.
+- **H₁ (Alternative Hypothesis):** Users who report Anxiety or Sadness send significantly more DMs or comments than others.
+
+---
+
+#### 📈 Test Results
+
+- **Messages Sent Per Day:**  
+  t = `1.2319`, p = `0.2209`
+
+- **Comments Received Per Day:**  
+  t = `0.0805`, p = `0.9360`
+
+---
+
+#### ✅ Conclusion
+Since both p-values are greater than 0.05, we **fail to reject the null hypothesis**.  
+Although visuals suggested that anxious or sad users might engage more via DMs or comments, the t-test shows that the difference is **not statistically significant** in this dataset.
+
+---
 
 ## **📌 Project Timeline**
 | Date | Task |
