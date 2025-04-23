@@ -86,16 +86,6 @@ This project integrates multiple datasets to analyze stress levels in relation t
 
 ---
 
-### 2️⃣ Culture Might Help People Handle Economic Stress  
-📂 **Dataset:** `gallup_emotion_data_2023.csv`, `oecd_income_sample.csv`  
-📊 **Visualization:** Emotion Heatmap + OECD Income Overlay
-
-> Some **low-income countries** (like **Vietnam**) still show high levels of **positive emotions**.  
-> This suggests that **cultural or social support** in these countries might help people feel better, even if the economy isn’t strong.  
-> So, **income alone doesn’t explain stress levels** — the environment people live in also matters a lot.
-
----
-
 ## **📊 Data Collection & EDA**
 
 ### 🧼 Data Cleaning Summary
@@ -226,6 +216,16 @@ We visualized five key emotional indicators from Gallup’s global survey: **str
 
 > People who feel **anxious** or **sad** are more likely to send **DMs** or leave **comments** instead of just liking posts.  
 > This might mean that people with negative emotions try to interact more with others online. It also shows that the **way people use social media** can tell us about their emotional state — not just how much time they spend on it.
+
+---
+
+### 2️⃣ Culture Might Help People Handle Economic Stress  
+📂 **Dataset:** `gallup_emotion_data_2023.csv`, `oecd_income_sample.csv`  
+📊 **Visualization:** Emotion Heatmap + OECD Income Overlay
+
+> Some **low-income countries** (like **Vietnam**) still show high levels of **positive emotions**.  
+> This suggests that **cultural or social support** in these countries might help people feel better, even if the economy isn’t strong.  
+> So, **income alone doesn’t explain stress levels** — the environment people live in also matters a lot.
 
 ---
 
