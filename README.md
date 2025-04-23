@@ -86,17 +86,6 @@ This project integrates multiple datasets to analyze stress levels in relation t
 
 ---
 
-## 📌 Hypotheses Based on Visualizations
-
-### 1️⃣ Social Media Activity Reflects Emotional State  
-📂 **Dataset:** `social_media_stress.csv`  
-📊 **Visualization:** Violin plots — Likes, Comments & DMs vs Emotion
-
-> People who feel **anxious** or **sad** are more likely to send **DMs** or leave **comments** instead of just liking posts.  
-> This might mean that people with negative emotions try to interact more with others online. It also shows that the **way people use social media** can tell us about their emotional state — not just how much time they spend on it.
-
----
-
 ### 2️⃣ Culture Might Help People Handle Economic Stress  
 📂 **Dataset:** `gallup_emotion_data_2023.csv`, `oecd_income_sample.csv`  
 📊 **Visualization:** Emotion Heatmap + OECD Income Overlay
@@ -226,6 +215,17 @@ We visualized five key emotional indicators from Gallup’s global survey: **str
 - The heatmap allows easy country-to-country emotional comparison
 
 ![Emotion Heatmap Table](eda/emotion_heatmap_table.png)
+
+---
+
+## 📌 Hypotheses Based on Visualizations
+
+### 1️⃣ Social Media Activity Reflects Emotional State  
+📂 **Dataset:** `social_media_stress.csv`  
+📊 **Visualization:** Violin plots — Likes, Comments & DMs vs Emotion
+
+> People who feel **anxious** or **sad** are more likely to send **DMs** or leave **comments** instead of just liking posts.  
+> This might mean that people with negative emotions try to interact more with others online. It also shows that the **way people use social media** can tell us about their emotional state — not just how much time they spend on it.
 
 ---
 
