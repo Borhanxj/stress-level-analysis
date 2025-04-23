@@ -264,6 +264,33 @@ Although visuals suggested that anxious or sad users might engage more via DMs o
 
 ---
 
+### 🧪 Hypothesis Test 2: Culture May Buffer Against Economic Stress
+
+📂 **Datasets used:** `cleaned_gallup_emotion_data.csv`, `cleaned_oecd_income_data.csv`  
+📁 **Code file:** [`hypothesis2_income_vs_emotion_test.py`](eda/hypothesis2_income_vs_emotion_test.py)  
+🧪 **Method:** Independent Samples t-Test
+
+---
+
+#### 📌 Hypothesis
+- **H₀ (Null Hypothesis):** There is no difference in Positive Experience Index between high-income and low-income countries.
+- **H₁ (Alternative Hypothesis):** Low-income countries report significantly different levels of positive emotion compared to high-income countries.
+
+---
+
+#### 📊 Test Results
+
+- **Positive Experience Index (Low vs High Income):**  
+  t = `-0.8188`, p = `0.4442`
+
+---
+
+#### ✅ Conclusion
+Since the p-value is greater than 0.05, we **fail to reject the null hypothesis**.  
+This means that in this dataset, there is **no statistically significant difference** in positive emotions between high-income and low-income countries — even though the original hypothesis suggested there might be.
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
