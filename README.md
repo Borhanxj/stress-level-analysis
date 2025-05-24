@@ -27,24 +27,6 @@ Could factors like **economic instability, climate conditions, or health factors
 
 ---
 
-## **📌 Project Scope**
-### **Country as a Parameter**
-Instead of limiting the analysis to specific countries, this project considers **all available regions** in the dataset and uses **country as a parameter** in analysis. However, **comparisons will focus on**:
-- 🇺🇸 **United States**
-- 🇩🇪 **Germany**
-- 🇰🇷 **South Korea**
-
-This approach provides **flexibility** while still allowing deeper regional insights.
-
-### **Comparison Factors**
-- **Economic Factors:** Salary distribution, unemployment, cost of living.
-- **Environmental Factors:** Temperature, precipitation, air pollution.
-- **Demographic Trends:** Stress levels by age, gender, and location.
-
-This ensures a **broad but structured** analysis.
-
----
-
 ## **📌 Datasets & Parameters**
 This project integrates multiple datasets to analyze stress levels in relation to external factors.
 
