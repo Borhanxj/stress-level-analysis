@@ -330,6 +330,30 @@ Unfortunately, our alternative hypotheses about external factors contributing to
 
 ---
 
+## 🧪 Train/Test Split
+
+The dataset is split into:
+
+- **Training Set**: 80% of the data
+- **Testing Set**: 20% of the data
+- **Stratified**: Ensures equal distribution of stress levels across splits
+
+### 📁 Output Files
+
+| File Name         | Description                         |
+|------------------|-------------------------------------|
+| `X_train_final.csv` | Features for training              |
+| `X_test_final.csv`  | Features for testing               |
+| `y_train_final.csv` | Labels for training                |
+| `y_test_final.csv`  | Labels for testing                 |
+
+This split ensures that models are trained on a diverse set of samples while preserving stress level distribution for fair testing.
+
+Code:
+➡️ [`split_data.py`](./models/split_data.py)
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
