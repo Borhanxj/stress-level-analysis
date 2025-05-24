@@ -62,6 +62,15 @@ This project integrates multiple datasets to analyze stress levels in relation t
 📌 **Includes:** Salary distribution, income inequality.  
 📌 **Covers:** Multiple countries (requires data extraction).  
 
+## 📂 5️⃣ Social Media Usage & Emotion
+- **File:** `social_media_stress.csv`  
+- **Source:** Survey-Based Dataset  
+- **Description:**  
+  Individual-level data on platform usage and emotional response. **Note: Cleaning pending.** Intended fields:
+  - Daily usage time
+  - Posts, likes, comments, messages per day
+  - Dominant emotion (e.g., Anxiety, Neutral, etc.)
+
 ---
 
 ## **📊 Data Collection & EDA**
