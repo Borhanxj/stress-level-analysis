@@ -10,6 +10,7 @@ This project explores how external factors—including **economic indicators and
 ### **Key Research Questions**
 - How do **unemployment rates and salary distribution** impact reported stress levels?
 - Do **environmental conditions** (temperature, rainfall, pollution) correlate with higher stress levels?
+- Do **physiological factors** like **respiration rate, body temperature, heart rate**, and **hours of sleep** influence stress?
 - Are there **regional or demographic differences** in stress patterns?
 - Does the **cost of living** influence mental health outcomes?
 
@@ -20,7 +21,7 @@ Stress is something many of us experience, but it's also becoming a major public
 A recent survey ranked it just behind **cancer and mental health** as one of the biggest concerns, with countries like **South Korea and Turkey** reporting especially high levels.  
 Younger people are often more affected, but even a significant number of older adults struggle with stress.  
 This makes me wonder—**what’s driving this rise in stress?**  
-Could factors like **economic instability or climate conditions** play a role?  
+Could factors like **economic instability, climate conditions, or health factors** play a role?  
 **That’s what I want to explore in this project.**  
 ([Statista](https://www.statista.com/statistics/1057961/the-most-stressed-out-populations-worldwide/?utm_source=chatgpt.com))
 
