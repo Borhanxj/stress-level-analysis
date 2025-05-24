@@ -79,41 +79,44 @@ This project integrates multiple datasets to analyze stress levels in relation t
 
 Before performing exploratory data analysis (EDA), we applied structured cleaning operations across all datasets to ensure consistency and reliability:
 
-#### ✅ `social_media_stress.csv`
-- Converted `Age` column to numeric format
-- Removed rows with missing or invalid age values
-- Cleaned dataset used to analyze usage time and engagement patterns by emotion
+#### ✅ `Stress_Data.csv` – Cleaning Overview
+**Goal:** Prepare individual-level mental health and stress data for analysis by ensuring consistency and removing invalid values.
 
-#### ✅ `Stress_Data.csv`
-- Preserved full data but grouped by `Country` to calculate proportions of stress levels (`Low`, `Medium`, `High`)
-- Used for country-level comparisons and merged with economic indicators
+### Cleaning Steps Performed:
+1. **Convert `Age` column to numeric**:
+   - Coerce invalid entries to `NaN`.
+   - Drop rows with missing or unrealistic age values (e.g., less than 13 or more than 100).
+
+2. **Drop rows with any missing values** in critical columns:
+   - `Age`, `Gender`, `Mental_Health_Condition`, `Stress_Level`, `Sleep_Hours`, `Work_Hours`, `Physical_Activity_Hours`.
+
+3. **Normalize categorical values**:
+   - Standardize text fields like `Gender`, `Mental_Health_Condition`, and `Stress_Level` to consistent casing (title case).
+### 🧾 Cleaning Code
+📎 [`clean_stress_data.py`](./data/clean_stress_data.py)
+
+> ✅ Result: A clean and ready-to-use dataset for correlation and predictive modeling.
+---
 
 #### ✅ `World_Economic_Data.csv`
-- Removed percentage symbols and commas from fields such as `Unemployment rate`, `CPI`, `Life expectancy`, and `Tax revenue (%)`
-- Converted cleaned columns to numeric types
-- Prepared for merging with stress summaries to enable correlation analysis
+**Goal:** Prepare country-level economic indicators for merging with stress survey data and other global indices.
 
-#### ✅ `Gallup_Stress_Report_2024.pdf`
-- Extracted emotional indicators like `Stress`, `Worry`, `Anger`, `Sadness`, `Loneliness` and global experience indices
-- Manually converted structured values into tabular form
-- Saved as `gallup_emotion_data_2023.csv` for further use
+### Cleaning Steps Performed
 
-#### ✅ `OECD_Income_Data.pdf`
-- Sample disposable income values were extracted for selected countries
-- Used to support high-level comparison between income and emotional health patterns
+1. **Removed formatting artifacts**:
+   - Stripped `%` signs and commas from the following columns:
+     - `Unemployment rate`
+     - `CPI`
+     - `Life expectancy`
+     - `Tax revenue (%)`
+     - `Population: Labor force participation (%)`
 
-#### ✅ `data_stress.csv`
-- Dropped rows with missing physiological data
-- Removed unrealistic values such as:
-  - Sleep hours < 1 or > 16
-  - Heart rate < 40 or > 120
-  - Body temperature < 90°F or > 105°F
-  - Blood oxygen > 100
-  - Eye movement > 120
-  - Respiration rate > 40
-  - Limb movement > 40
-- Cleaned dataset will be used in the **machine learning phase** to **predict stress levels based on physiological signals**
-- 📄 **Code file:** [`cleaned_data_stress.py`](data/cleaned_data_stress.csv)
+2. **Converted columns to numeric types** for analysis
+
+---
+
+### 🧾 Cleaning Code
+📎 [`clean_world_economic_data.py`](./data/clean_world_economic_data.py)
 
 ---
 
