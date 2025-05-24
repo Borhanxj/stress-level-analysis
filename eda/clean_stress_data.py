@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv("data/Stress_Data.csv")
 
 # Drop irrelevant columns
-drop_cols = ["Timestamp", "Mental_Health_Condition"]
+drop_cols = ["User_ID", "Timestamp", "Mental_Health_Condition"]
 df = df.drop(columns=drop_cols, errors="ignore")
 
 # Drop rows with missing target (Stress_Level)
