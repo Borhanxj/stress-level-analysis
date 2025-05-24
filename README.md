@@ -291,6 +291,16 @@ This means that in this dataset, there is **no statistically significant differe
 
 ---
 
+## 🤖 Phase 3: Machine Learning Modeling
+
+In this phase, we implemented a supervised classification model to predict **Stress Level** (Low, Medium, High) based on lifestyle and demographic features.
+
+📂 **Dataset used:** `Stress_Data.csv`  
+🎯 **Target variable:** `Stress_Level`  
+🧠 **Model type:** Supervised Classification (Decision Tree, Logistic Regression, etc.)
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
