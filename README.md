@@ -110,7 +110,7 @@ Before performing exploratory data analysis (EDA), we applied structured cleanin
   - Respiration rate > 40
   - Limb movement > 40
 - Cleaned dataset will be used in the **machine learning phase** to **predict stress levels based on physiological signals**
-- 📄 **Code file:** [`clean_data_stress.py`](data/clean_data_stress.py)
+- 📄 **Code file:** [`cleaned_data_stress.py`](data/cleaned_data_stress.py)
 
 ---
 
