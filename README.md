@@ -123,17 +123,6 @@ We created a merged dataset combining **country-level stress proportions** from 
 
 This merged dataset was the foundation for our **correlation heatmap** and multiple cross-variable analyses.
 
-
----
-
-### 📊 EDA: Daily Usage Time vs Dominant Emotion
-
-📂 **Dataset used:** `social_media_stress.csv`
-
-We explored how much time users spend on social media and how it relates to their dominant emotional state.
-
-![Boxplot: Daily Usage Time by Emotion](eda/boxplot_usage_emotion.png)
-
 ---
 
 ### 🧪 EDA: Likes, Comments & DMs vs Emotion
