@@ -333,6 +333,23 @@ Our target variable is `Stress_Level`, which has three classes: **Low**, **Mediu
 
 ---
 
+### 🧹 Preprocessing and Train/Test Split
+
+We prepared the dataset for modeling by applying standard preprocessing steps:
+
+- 🧮 **Numerical features** were scaled using `StandardScaler`:
+  - `Age`, `Sleep_Hours`, `Work_Hours`, `Physical_Activity_Hours`
+
+- 🔤 **Categorical features** were encoded using `OneHotEncoder`:
+  - `Gender`, `Occupation`, `Country`, `Severity`, `Consultation_History`, `Mental_Health_Condition`
+
+We then split the dataset into training and testing sets using `train_test_split` with a **stratified 80/20 split** to preserve the balance of the `Stress_Level` classes.
+
+- 🟦 **Training set:** 800 samples  
+- 🟨 **Test set:** 200 samples
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
