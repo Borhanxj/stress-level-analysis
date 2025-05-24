@@ -270,94 +270,63 @@ Unfortunately, our alternative hypotheses about external factors contributing to
 
 ## 📌 Phase 3: Machine Learning Model Design
 
-**Goal:** Transform cleaned mental health data into a format suitable for supervised machine learning.
+## 📦 Dataset Overview
 
----
+- **Total Records**: 1,100
+- **Features**: 20 input variables + 1 target (`stress_level`)
+- **Type**: Tabular, fully numeric (integer)
+- **Target**: `stress_level` (values: 0 = Low, 1 = Medium, 2 = High)
 
-### ✅ Final Cleaning Steps Performed
+## 🧠 Features
 
-1. **Dropped irrelevant columns**:
-   - `User_ID` (not useful for prediction)
-   - `Severity` (omitted for simplification)
+| Feature Name                  | Description                                                 |
+|------------------------------|-------------------------------------------------------------|
+| `anxiety_level`              | Reported anxiety score                                      |
+| `self_esteem`                | Self-reported self-esteem level                             |
+| `mental_health_history`      | 1 = has history, 0 = no history                             |
+| `depression`                 | Score indicating depression severity                        |
+| `headache`                   | Headache frequency/severity                                 |
+| `blood_pressure`             | Systolic/diastolic score or proxy                          |
+| `sleep_quality`              | Quality of sleep (higher is better)                         |
+| `breathing_problem`          | Severity of respiratory issues                              |
+| `noise_level`                | Environmental noise level at home                           |
+| `living_conditions`          | Housing situation comfort                                   |
+| `safety`                     | Perceived physical safety                                   |
+| `basic_needs`                | Access to food, shelter, clothing                           |
+| `academic_performance`       | Grades or performance rating                                |
+| `study_load`                 | Amount of academic workload                                 |
+| `teacher_student_relationship`| Quality of relationship with instructors                    |
+| `future_career_concerns`     | Stress about post-grad future                               |
+| `social_support`             | Support from family and friends                             |
+| `peer_pressure`              | Impact of peers on personal decisions                       |
+| `extracurricular_activities` | Involvement in non-academic activities                      |
+| `bullying`                   | Exposure to bullying                                        |
 
-2. **Removed incomplete/demographic noise**:
-   - Filtered out rows where `Gender` was "Prefer not to say"
+## 🎯 Target Variable
 
-3. **Converted `Stress_Level` to binary label**:
-   - `High` → `1` (Positive class)
-   - All other levels (`Medium`, `Low`) → `0` (Negative class)
+- `stress_level`:  
+  - `0` = Low stress  
+  - `1` = Medium stress  
+  - `2` = High stress  
 
-Full code is saved here:  
-📎 [`prepare_stress_data_for_ml.py`](./data/prepare_stress_data_for_ml.py)
+## ✅ Data Quality
 
-> ✅ Output file: `ml_ready_Stress_Data.csv` – ready to be used for training models in Phase 3.
+- No missing values  
+- All features are numerical  
+- Well-suited for classification tasks using ML algorithms like Random Forest, SVM, KNN, etc.
 
----
+## 📊 Applications
 
-## 📊 Train/Test Data Splitting
+- Predicting student stress for early intervention
+- Building personalized mental health recommendation systems
+- Understanding key factors contributing to stress
 
-Before building machine learning models, we divide the dataset into **features** and **target**, then split them for training and evaluation.
+## 🔍 Usage Examples
 
----
-
-### 🧩 Why Split?
-
-- **Features (`X`)**: All columns used as input to predict stress level (e.g., Age, Sleep Hours).
-- **Target (`y`)**: The column we want to predict → `Stress_Level` (binary: 1 = High, 0 = Not High).
-
-We perform an **80/20 split**:
-- 80% for training the model (`X_train`, `y_train`)
-- 20% for evaluating performance on unseen data (`X_test`, `y_test`)
-
----
-
-### 🧾 Code Used
-
-The full Python script is saved here:  
-📎 [`split_data_for_modeling.py`](./models/split_data_for_modeling.py)
-
-This script:
-- Loads the final dataset
-- Splits into features and target
-- Divides the data into training and testing sets
-- Saves all parts as separate CSV files for modeling
-
-> ✅ Output: 4 files (`X_train`, `X_test`, `y_train`, `y_test`) are now ready for model training.
-
----
-
-## Model 1 : Logistic Regression Model
-
-We begin by training a **Logistic Regression** model on our dataset. This serves as a simple and interpretable baseline.
-
----
-
-### 🧩 Steps Performed
-
-1. **One-hot encoded** all categorical features
-2. **Aligned** test and training sets to ensure matching columns
-3. **Trained** a logistic regression model with:
-   - `max_iter=1000` to ensure convergence
-4. **Predicted probabilities** for the test set
-5. **Evaluated** performance using:
-   - ROC Curve
-   - AUC (Area Under the Curve)
-
----
-
-### 📊 Performance
-
-- **AUC Score:** `0.44` (Weak performance, suggests model is not predictive yet)
-
----
-
-### Codes:
-
-📎 [`train_logistic_regression.py`](./models/train_logistic_regression.py)
-📎 [`train_logistic_regression_with_roc.py`](./models/train_logistic_regression_with_roc.py)
-
-This script handles data preprocessing, training, and ROC plotting.  
-> Output image: `roc_logistic_regression.png`
+- Train/test split and model training
+- ROC curve generation for each class
+- Classification reports and confusion matrices
+- AUC scores for multiclass classification
 
 ---
 
