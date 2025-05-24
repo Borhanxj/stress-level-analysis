@@ -49,19 +49,14 @@ This project integrates multiple datasets to analyze stress levels in relation t
 📌 **Covers:** Multiple countries (Country is a parameter).  
 
 ### **4️⃣ Economic Indicators**
-#### **a. Quality of Life (U.S. Specific)**
-📂 **File:** `Quality_of_Life_US.csv`  
-📌 **Source:** Kaggle - U.S. Statewise Quality of Life Index  
-📌 **Includes:** Cost of living, employment rates, and economic conditions.  
-📌 **Covers:** United States (state-level).  
 
-#### **b. Global Economic Data**
+#### **a. Global Economic Data**
 📂 **File:** `World_Economic_Data.csv`  
 📌 **Source:** Kaggle - World Data 2023  
 📌 **Includes:** GDP, income levels, unemployment rates.  
 📌 **Covers:** Multiple countries (Country is a parameter).  
 
-#### **c. Income Distribution (OECD)**
+#### **b. Income Distribution (OECD)**
 📂 **File:** `OECD_Income_Data.pdf`  
 📌 **Source:** OECD Income Distribution Database  
 📌 **Includes:** Salary distribution, income inequality.  
