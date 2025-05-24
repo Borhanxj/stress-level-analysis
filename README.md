@@ -353,8 +353,8 @@ We begin by training a **Logistic Regression** model on our dataset. This serves
 
 ### Codes:
 
-📎 [`train_logistic_regression.py`](./train_logistic_regression.py)
-📎 [`train_logistic_regression_with_roc.py`](./train_logistic_regression_with_roc.py)
+📎 [`train_logistic_regression.py`](./models/train_logistic_regression.py)
+📎 [`train_logistic_regression_with_roc.py`](./models/train_logistic_regression_with_roc.py)
 
 This script handles data preprocessing, training, and ROC plotting.  
 > Output image: `roc_logistic_regression.png`
