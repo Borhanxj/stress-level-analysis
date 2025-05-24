@@ -92,10 +92,12 @@ Before performing exploratory data analysis (EDA), we applied structured cleanin
 
 3. **Normalize categorical values**:
    - Standardize text fields like `Gender`, `Mental_Health_Condition`, and `Stress_Level` to consistent casing (title case).
+
 ### 🧾 Cleaning Code
 📎 [`clean_stress_data.py`](./data/clean_stress_data.py)
 
 > ✅ Result: A clean and ready-to-use dataset for correlation and predictive modeling.
+
 ---
 
 #### ✅ `World_Economic_Data.csv`
@@ -113,8 +115,6 @@ Before performing exploratory data analysis (EDA), we applied structured cleanin
 
 2. **Converted columns to numeric types** for analysis
 
----
-
 ### 🧾 Cleaning Code
 📎 [`clean_world_economic_data.py`](./data/clean_world_economic_data.py)
 
@@ -127,7 +127,7 @@ We created a merged dataset combining **country-level stress proportions** from 
 📄 **File:** `merged_stress_economics.csv`  
 🧩 **Purpose:** To analyze how **economic and healthcare metrics** (e.g., life expectancy, unemployment, physician density) correlate with the **proportion of people reporting high stress**.
 
-This merged dataset was the foundation for our **correlation heatmap** and multiple cross-variable analyses.
+This merged dataset was used for our **correlation heatmap** and multiple cross-variable analyses.
 
 ---
 
