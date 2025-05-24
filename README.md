@@ -294,6 +294,38 @@ Full code is saved here:
 
 ---
 
+## 📊 Train/Test Data Splitting
+
+Before building machine learning models, we divide the dataset into **features** and **target**, then split them for training and evaluation.
+
+---
+
+### 🧩 Why Split?
+
+- **Features (`X`)**: All columns used as input to predict stress level (e.g., Age, Sleep Hours).
+- **Target (`y`)**: The column we want to predict → `Stress_Level` (binary: 1 = High, 0 = Not High).
+
+We perform an **80/20 split**:
+- 80% for training the model (`X_train`, `y_train`)
+- 20% for evaluating performance on unseen data (`X_test`, `y_test`)
+
+---
+
+### 🧾 Code Used
+
+The full Python script is saved here:  
+📎 [`split_data_for_modeling.py`](./model/split_data_for_modeling.py)
+
+This script:
+- Loads the final dataset
+- Splits into features and target
+- Divides the data into training and testing sets
+- Saves all parts as separate CSV files for modeling
+
+> ✅ Output: 4 files (`X_train`, `X_test`, `y_train`, `y_test`) are now ready for model training.
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
