@@ -351,6 +351,46 @@ We then split the dataset into training and testing sets using `train_test_split
 
 ---
 
+### 🌳 Model 1: Decision Tree Classifier
+
+We trained a baseline **Decision Tree Classifier** to predict `Stress_Level` (Low / Medium / High) using lifestyle and demographic features.
+
+📁 **Code file:** [`model1_decision_tree.py`](models/model1_decision_tree.py)  
+📂 **Dataset used:** `cleaned_stress_data_modeling.csv`  
+🎯 **Target variable:** `Stress_Level`
+
+---
+
+#### 🔧 Preprocessing:
+- **Numerical features** (`Age`, `Sleep_Hours`, `Work_Hours`, `Physical_Activity_Hours`) were scaled using `StandardScaler`
+- **Categorical features** (`Gender`, `Country`, `Occupation`, etc.) were encoded using `OneHotEncoder`
+
+---
+
+#### 📊 Train/Test Split:
+- Train set: 80% (800 samples)
+- Test set: 20% (200 samples)
+- Stratified sampling used to preserve class balance
+
+---
+
+#### 📈 Evaluation Results:
+
+| Class   | Precision | Recall | F1-score |
+|---------|-----------|--------|----------|
+| High    | 0.30      | 0.31   | 0.31     |
+| Medium  | 0.37      | 0.33   | 0.35     |
+| Low     | 0.32      | 0.35   | 0.34     |
+
+**Overall Accuracy:** `33%`
+
+---
+
+#### 📌 Conclusion:
+The decision tree model performs close to random. Although it's a simple and interpretable baseline, the results suggest that the current features alone may not be strong predictors of stress level. Further model tuning or more informative features may help improve accuracy.
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
