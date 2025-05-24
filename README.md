@@ -301,6 +301,21 @@ In this phase, we implemented a supervised classification model to predict **Str
 
 ---
 
+### 🧼 Data Cleaning: `Stress_Data.csv`
+
+Before training a model, we cleaned the dataset to ensure quality and consistency.
+
+📁 **Code file:** [`clean_stress_data.py`](eda/clean_stress_data.py)
+
+#### ✅ Cleaning Steps:
+- Dropped unnecessary columns: `Timestamp`, `Mental_Health_Condition`
+- Removed rows with missing values in the target column: `Stress_Level`
+- Dropped any other rows containing missing data
+
+📄 The final cleaned dataset was saved as: `cleaned_stress_data_modeling.csv`
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
