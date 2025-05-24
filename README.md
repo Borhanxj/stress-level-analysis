@@ -271,6 +271,22 @@ This means that in this dataset, there is **no statistically significant differe
 
 ---
 
+Unfortunately, our alternative hypotheses about external factors contributing to stress levels were not supported, and we failed to reject the null hypotheses. Therefore, in the machine learning model, I will only use physiological features to predict stress levels.
+
+## 📌 Phase 3: Machine Learning Model Design
+
+We aim to develop machine learning models to **predict stress levels** from physiological signals such as heart rate, sleep, body temperature, etc.
+
+### 🎯 Objective
+To build and evaluate multiple supervised classification models using physiological inputs to determine the most accurate predictor of stress level.
+
+### ⚙️ Dataset Used
+📂 File: `data/cleaned_data_stress.csv`  
+🎯 Target variable: `Stress Levels` (values: 0, 1, 2, 3)  
+🧩 Features: `snoring range`, `respiration rate`, `body temperature`, `limb movement`, `blood oxygen`, `eye movement`, `hours of sleep`, `heart rate`
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
