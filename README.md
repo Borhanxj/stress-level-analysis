@@ -62,12 +62,6 @@ This project integrates multiple datasets to analyze stress levels in relation t
 📌 **Includes:** Salary distribution, income inequality.  
 📌 **Covers:** Multiple countries (requires data extraction).  
 
-### **5️⃣ Physiological Stress Monitoring Dataset**  
-📂 **File:** `data_stress.csv`  
-📌 **Source:** Kaggle – Physiological Stress Monitoring Dataset  
-📌 **Includes:** Real-time biometric data such as **snoring range**, **respiration**, **body temperature**, **limb movement**, **blood oxygen**, **eye movement**, **hours of sleep**, and **heart rate**, along with corresponding **stress level labels**.  
-📌 **Covers:** Individual-level observations for health-based stress analysis.
-
 ---
 
 ## **📊 Data Collection & EDA**
