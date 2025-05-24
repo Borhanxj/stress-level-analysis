@@ -270,15 +270,27 @@ Unfortunately, our alternative hypotheses about external factors contributing to
 
 ## 📌 Phase 3: Machine Learning Model Design
 
-We aim to develop machine learning models to **predict stress levels** from physiological signals such as heart rate, sleep, body temperature, etc.
+**Goal:** Transform cleaned mental health data into a format suitable for supervised machine learning.
 
-### 🎯 Objective
-To build and evaluate multiple supervised classification models using physiological inputs to determine the most accurate predictor of stress level.
+---
 
-### ⚙️ Dataset Used
-📂 File: `data/cleaned_data_stress.csv`  
-🎯 Target variable: `Stress Levels` (values: 0, 1, 2, 3)  
-🧩 Features: `snoring range`, `respiration rate`, `body temperature`, `limb movement`, `blood oxygen`, `eye movement`, `hours of sleep`, `heart rate`
+### ✅ Final Cleaning Steps Performed
+
+1. **Dropped irrelevant columns**:
+   - `User_ID` (not useful for prediction)
+   - `Severity` (omitted for simplification)
+
+2. **Removed incomplete/demographic noise**:
+   - Filtered out rows where `Gender` was "Prefer not to say"
+
+3. **Converted `Stress_Level` to binary label**:
+   - `High` → `1` (Positive class)
+   - All other levels (`Medium`, `Low`) → `0` (Negative class)
+
+Full code is saved here:  
+📎 [`prepare_stress_data_for_ml.py`](./data/prepare_stress_data_for_ml.py)
+
+> ✅ Output file: `ml_ready_Stress_Data.csv` – ready to be used for training models in Phase 3.
 
 ---
 
