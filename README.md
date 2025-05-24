@@ -391,6 +391,45 @@ The decision tree model performs close to random. Although it's a simple and int
 
 ---
 
+### 🤖 Model 2: Logistic Regression
+
+We trained a **Logistic Regression** model as a second classifier to predict `Stress_Level` based on personal and lifestyle features.
+
+📁 **Code file:** [`model2_logistic_regression.py`](models/model2_logistic_regression.py)  
+📂 **Dataset used:** `cleaned_stress_data_modeling.csv`
+
+---
+
+#### 🔧 Preprocessing:
+- Numerical features (`Age`, `Sleep_Hours`, `Work_Hours`, `Physical_Activity_Hours`) scaled using `StandardScaler`
+- Categorical features (`Gender`, `Country`, `Occupation`, etc.) encoded using `OneHotEncoder`
+
+---
+
+#### 📊 Train/Test Split:
+- Train: 800 samples
+- Test: 200 samples
+- Stratified to maintain class balance
+
+---
+
+#### 📈 Evaluation Results:
+
+| Class   | Precision | Recall | F1-score |
+|---------|-----------|--------|----------|
+| High    | 0.31      | 0.40   | 0.35     |
+| Medium  | 0.37      | 0.28   | 0.32     |
+| Low     | 0.33      | 0.31   | 0.32     |
+
+**Overall Accuracy:** `33%`
+
+---
+
+#### 📌 Conclusion:
+Logistic Regression performed similarly to the decision tree, with an overall accuracy of ~33%. While it's simple and interpretable, this result suggests the features may not provide strong separation between stress classes.
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
