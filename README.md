@@ -99,6 +99,18 @@ Before performing exploratory data analysis (EDA), we applied structured cleanin
 - Sample disposable income values were extracted for selected countries
 - Used to support high-level comparison between income and emotional health patterns
 
+#### ✅ `data_stress.csv`
+- Dropped rows with missing physiological data
+- Removed unrealistic values such as:
+  - Sleep hours < 1 or > 16
+  - Heart rate < 40 or > 120
+  - Body temperature < 90°F or > 105°F
+  - Blood oxygen > 100
+  - Eye movement > 120
+  - Respiration rate > 40
+  - Limb movement > 40
+- Cleaned dataset will be used in the **machine learning phase** to **predict stress levels based on physiological signals**
+
 ---
 
 ### 🔗 Merged Dataset Overview
