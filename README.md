@@ -326,6 +326,41 @@ This script:
 
 ---
 
+## Model 1 : Logistic Regression Model
+
+We begin by training a **Logistic Regression** model on our dataset. This serves as a simple and interpretable baseline.
+
+---
+
+### 🧩 Steps Performed
+
+1. **One-hot encoded** all categorical features
+2. **Aligned** test and training sets to ensure matching columns
+3. **Trained** a logistic regression model with:
+   - `max_iter=1000` to ensure convergence
+4. **Predicted probabilities** for the test set
+5. **Evaluated** performance using:
+   - ROC Curve
+   - AUC (Area Under the Curve)
+
+---
+
+### 📊 Performance
+
+- **AUC Score:** `0.44` (Weak performance, suggests model is not predictive yet)
+
+---
+
+### Codes:
+
+📎 [`train_logistic_regression.py`](./train_logistic_regression.py)
+📎 [`train_logistic_regression_with_roc.py`](./train_logistic_regression_with_roc.py)
+
+This script handles data preprocessing, training, and ROC plotting.  
+> Output image: `roc_logistic_regression.png`
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
