@@ -316,6 +316,23 @@ Before training a model, we cleaned the dataset to ensure quality and consistenc
 
 ---
 
+### 🔍 Feature Overview for Modeling
+
+After cleaning the dataset, we explored the available features to select those useful for training a model to predict `Stress_Level`.
+
+The cleaned dataset contains 1,000 samples with the following relevant columns:
+
+- **Numerical Features:**
+  - `Age`, `Sleep_Hours`, `Work_Hours`, `Physical_Activity_Hours`
+
+- **Categorical Features:**
+  - `Gender`, `Occupation`, `Country`, `Mental_Health_Condition`
+  - `Severity`, `Consultation_History`
+
+Our target variable is `Stress_Level`, which has three classes: **Low**, **Medium**, and **High**.
+
+---
+
 ## **📌 Project Timeline**
 | Date | Task |
 |------|------|
