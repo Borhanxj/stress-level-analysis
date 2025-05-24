@@ -314,7 +314,7 @@ We perform an **80/20 split**:
 ### 🧾 Code Used
 
 The full Python script is saved here:  
-📎 [`split_data_for_modeling.py`](./model/split_data_for_modeling.py)
+📎 [`split_data_for_modeling.py`](./models/split_data_for_modeling.py)
 
 This script:
 - Loads the final dataset
