@@ -325,3 +325,6 @@ By transforming stress into a binary classification problem and evaluating multi
 This work is important because it demonstrates how data-driven approaches can be used to uncover hidden patterns in mental health and support early detection efforts. In educational environments where stress is often overlooked, such tools could contribute to more timely interventions and better student well-being.
 
 ---
+
+> 🧠 **Note on AI Assistance:**  
+> Parts of this project — including code debugging, README formatting, and markdown structuring — were supported with the help of ChatGPT. All outputs were carefully reviewed, edited, and finalized by me.
