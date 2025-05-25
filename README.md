@@ -23,6 +23,12 @@ The dataset was originally obtained from a public source and contains various at
 
 I cleaned the dataset to remove invalid entries, convert categorical variables to numeric formats, and drop irrelevant features. Below is the cleaning code.
 
+📂 **Raw Data File:**
+- [Student Insomnia and Educational Outcomes Dataset.csv](./raw_data/Student%20Insomnia%20and%20Educational%20Outcomes%20Dataset.csv)
+
+📂 **Cleaned Data:**
+- [Clean.csv](./cleaned_data/Clean.csv)
+
 ---
 
 ## 🧼 Data Cleaning Summary
@@ -40,6 +46,14 @@ These preprocessing steps ensured that the dataset was tidy, numerical, and read
 ## 📊 Exploratory Data Analysis (EDA)
 
 To begin the analysis, I first look at general summary statistics and visualize the distribution of key features in the dataset. This helps me understand the range, central tendency, and variation in behavioral factors that may relate to stress levels.
+
+📊 **EDA Visualizations:**
+
+![Correlation Matrix](./eda/correlation_matrix.png)  
+![Stress Level vs Features](./eda/stress_level_vs_features.png)  
+
+📄 **Sampled Dataset Used for Hypothesis Testing:**  
+- [Sampled_100.csv](./eda/Sampled_100.csv)
 
 ---
 
@@ -117,6 +131,8 @@ To better understand the patterns found in my hypothesis tests, I use bar plots 
 
 These visualizations help illustrate how these variables influence student stress.
 
+![Stress vs Sleep and Caffeine](./eda/stress_vs_sleep_caffeine.png)
+
 --- 
 
 ## 🤖 Machine Learning Modeling
@@ -143,17 +159,43 @@ I then plot the ROC curve to evaluate each model’s ability to distinguish stre
 
 ---
 
+# 🤖 Multi-Model Comparison: Binary Stress Classification
+
+With the stress levels now grouped into a binary format (Stressed vs Not Stressed), I train and evaluate multiple machine learning models to identify students under significant stress.
+
+Each model will be evaluated using:
+
+- **Accuracy**: Overall prediction correctness  
+- **ROC-AUC Score**: Ability to distinguish stressed students from non-stressed ones  
+- **ROC Curve**: Visual performance comparison
+
+---
+
+## 🌲 Random Forest
+
+Random Forest is an ensemble learning method that builds multiple decision trees and averages their predictions to improve accuracy and reduce overfitting. 
+
+It is used here due to its strong performance on structured data and its robustness to noise.
+
+![Random Forest ROC Curve](./models/random_forest_roc_curve.png)
+
+---
+
 ## 📍 K-Nearest Neighbors (KNN)
 
 K-Nearest Neighbors (KNN) is a simple, instance-based learning algorithm that classifies a sample based on the majority class of its closest training samples.
 
 I evaluate it using accuracy and ROC-AUC to see how well it distinguishes stressed from non-stressed students.
 
+![KNN ROC Curve](./models/knn_roc_curve.png)
+
 ---
 
 ## 📎 Support Vector Machine (SVM)
 
 Support Vector Machines are powerful classifiers that aim to find the optimal decision boundary (hyperplane) that separates classes. In binary stress classification, SVM attempts to separate stressed and non-stressed students using maximum margin.
+
+![SVM ROC Curve](./models/svm_roc_curve.png)
 
 ---
 
@@ -163,11 +205,15 @@ XGBoost is a powerful tree-based ensemble learning algorithm known for its speed
 
 In this step, I train XGBoost to predict student stress (binary: stressed vs not stressed), and evaluate its performance using accuracy and ROC-AUC.
 
+![XGBoost ROC Curve](./models/xgboost_roc_curve.png)
+
 ---
 
 ## 📉 Logistic Regression (Binary Classification)
 
 Logistic Regression is a linear model that predicts probabilities of class membership. It serves as a strong and interpretable baseline, especially for small or structured datasets. I train it with class balancing enabled and evaluate it using accuracy and ROC-AUC.
+
+![Logistic Regression ROC Curve](./models/logistic_regression_roc_curve.png)
 
 ---
 
@@ -178,6 +224,8 @@ After training all models on the same dataset using binary stress labels (Stress
 The ROC-AUC score provides a robust measure of each model’s ability to distinguish between stressed and non-stressed students. Below, we visualize and compare the ROC curves of Logistic Regression, Random Forest, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), and XGBoost.
 
 This comparison helps identify the most effective model for detecting high-stress students based on behavioral and physiological indicators.
+
+![ROC Comparison Across All Models](./models/roc_comparison_all_models.png)
 
 ---
 
@@ -193,6 +241,8 @@ To better understand how each model makes predictions, I visualize their confusi
 This breakdown complements the ROC-AUC analysis by showing where each model struggles — particularly in handling class imbalance or distinguishing borderline cases.
 
 ---
+
+![Confusion Matrices for All Models](./models/confusion_matrices_all_models.png)
 
 ## 🧠 Interpretation of Confusion Matrices
 
@@ -216,11 +266,17 @@ I have a new dataset collected by the same institution but in a different year. 
 - Clean and preprocess this new data similarly to the original dataset.  
 - Apply one of the models trained on the previous dataset to this new data to test their generalization performance.
 
+📂 **Raw Data File:**
+- [Student Insomnia and Educational Outcomes Dataset_version-2.csv](./raw_data/Student%20Insomnia%20and%20Educational%20Outcomes%20Dataset_version-2.csv)
+
 ---
 
 ## 🧼 Initial Data Cleaning and Encoding for New Dataset
 
 In this step, I clean the new dataset by handling missing values and applying the same categorical mappings as the original dataset. The target variable transformation into binary labels will be done later.
+
+📂 **Cleaned Data:**
+- [Clean_2.csv](./cleaned_data/Clean_2.csv)
 
 ---
 
@@ -239,9 +295,13 @@ Then I perform a stratified train-test split to maintain class balance in both s
 
 After training models on the original dataset, I evaluate their performance on a new dataset collected separately. This process assesses the generalization ability of the models in detecting stress levels on unseen data.
 
+![Logistic Regression ROC Curve](./models/logistic_regression_roc_curve2.png)
+
 ---
 
 ## 📊 Now, let's examine the confusion matrix to understand how well the model classifies stressed and not stressed students.
+
+![Logistic Regression Confusion Matrix](./models/logistic_regression_confusion_matrix.png)  
 
 ---
 
