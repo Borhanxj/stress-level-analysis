@@ -1,5 +1,7 @@
 # 📊 Stress Level Analysis
 
+> 📁 **Note:** All analyses, code implementations, model training steps, visualizations, and detailed explanations are available in the `DSA210.ipynb` notebook. Please refer to it for the complete end-to-end workflow of this project.
+
 ## 🎯 Motivation
 
 Stress is something many of us, including me, are dealing with. It's rapidly becoming a major global public health concern. According to recent surveys (Statista), stress ranks just behind cancer and mental health issues as one of the most pressing challenges in several countries—especially in nations like South Korea and Turkey, where stress levels are notably high.
