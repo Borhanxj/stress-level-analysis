@@ -314,3 +314,14 @@ The logistic regression model trained on the original dataset demonstrates stron
 
 These results confirm that the model generalizes well across datasets collected at different times, validating its robustness and practical applicability for stress level prediction in similar student populations.
 
+---
+
+## ✅ Final Remarks
+
+In this project, I explored the relationship between students' behavioral and physiological factors and their perceived stress levels. Through extensive data cleaning, hypothesis testing, and machine learning modeling, I found that features like sleep quality and caffeine consumption have a measurable impact on stress.
+
+By transforming stress into a binary classification problem and evaluating multiple models — including Logistic Regression, Random Forest, KNN, SVM, and XGBoost — I was able to build predictive systems that can effectively identify students under high stress with strong accuracy and generalization across datasets.
+
+This work is important because it demonstrates how data-driven approaches can be used to uncover hidden patterns in mental health and support early detection efforts. In educational environments where stress is often overlooked, such tools could contribute to more timely interventions and better student well-being.
+
+---
