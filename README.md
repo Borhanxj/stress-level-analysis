@@ -159,7 +159,7 @@ I then plot the ROC curve to evaluate each model’s ability to distinguish stre
 
 ---
 
-## 🤖 Multi-Model Comparison: Binary Stress Classification
+## 🏢 Multi-Model Comparison: Binary Stress Classification
 
 With the stress levels now grouped into a binary format (Stressed vs Not Stressed), I train and evaluate multiple machine learning models to identify students under significant stress.
 
