@@ -1,6 +1,6 @@
 # 📊 Stress Level Analysis
 
-> 📁 **Note:** All analyses, code implementations, model training steps, visualizations, and detailed explanations are available in the `DSA210.ipynb` notebook. Please refer to it for the complete end-to-end workflow of this project.
+> 📁 **Note:** All analyses, code implementations, model training steps, visualizations, and detailed explanations are available in the [`DSA210.ipynb`](./DSA210.ipynb) notebook.
 
 ## 🎯 Motivation
 
