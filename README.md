@@ -52,9 +52,6 @@ To begin the analysis, I first look at general summary statistics and visualize 
 ![Correlation Matrix](./eda/correlation_matrix.png)  
 ![Stress Level vs Features](./eda/stress_level_vs_features.png)  
 
-📄 **Sampled Dataset Used for Hypothesis Testing:**  
-- [Sampled_100.csv](./eda/Sampled_100.csv)
-
 ---
 
 ## 🧪 Sampling for Hypothesis Testing
@@ -69,6 +66,9 @@ To address this, I draw a random sample of 100 students from the dataset. This s
 If I don't do this, p-value will be extremely small which python rounds it to zero.
 
 I use this sampled data to perform hypothesis testing and visualize group-level differences in stress levels.
+
+📄 **Sampled Dataset Used for Hypothesis Testing:**  
+- [Sampled_100.csv](./eda/Sampled_100.csv)
 
 ---
 
@@ -135,7 +135,7 @@ These visualizations help illustrate how these variables influence student stres
 
 --- 
 
-## 🤖 Machine Learning Modeling
+# 🤖 Machine Learning Modeling
 
 In this phase, I aim to build predictive models to estimate a student's stress level based on behavioral and physiological features. My goal is to assess whether these features can reliably predict stress categories using supervised classification techniques.
 
@@ -159,7 +159,7 @@ I then plot the ROC curve to evaluate each model’s ability to distinguish stre
 
 ---
 
-# 🤖 Multi-Model Comparison: Binary Stress Classification
+## 🤖 Multi-Model Comparison: Binary Stress Classification
 
 With the stress levels now grouped into a binary format (Stressed vs Not Stressed), I train and evaluate multiple machine learning models to identify students under significant stress.
 
