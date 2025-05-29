@@ -301,13 +301,13 @@ Then I perform a stratified train-test split to maintain class balance in both s
 
 After training models on the original dataset, I evaluate their performance on a new dataset collected separately. This process assesses the generalization ability of the models in detecting stress levels on unseen data. Since I used XGBoost, I don't even have to standarize it.
 
-![Logistic Regression ROC Curve](./models/logistic_regression_roc_curve2.png)
+![XGBoost ROC Curve](./models/xgboost_roc_curve2.png)
 
 ---
 
 ## 📊 Now, let's examine the confusion matrix to understand how well the model classifies stressed and not stressed students.
 
-![Logistic Regression Confusion Matrix](./models/logistic_regression_confusion_matrix.png)  
+![XGBoost Confusion Matrix](./models/logistic_regression_confusion_matrix.png)  
 
 ---
 
