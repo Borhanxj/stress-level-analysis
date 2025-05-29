@@ -307,7 +307,7 @@ After training models on the original dataset, I evaluate their performance on a
 
 ## 📊 Now, let's examine the confusion matrix to understand how well the model classifies stressed and not stressed students.
 
-![XGBoost Confusion Matrix](./models/logistic_regression_confusion_matrix.png)  
+![XGBoost Confusion Matrix](./models/xgboost_confusion_matrix.png)  
 
 ---
 
