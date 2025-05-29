@@ -333,4 +333,4 @@ This work is important because it demonstrates how data-driven approaches can be
 ---
 
 > 🧠 **Note on AI Assistance:**  
-> Parts of this project — including code debugging, README formatting, and markdown structuring — were supported with the help of ChatGPT. All outputs were carefully reviewed, edited, and finalized by me.
+> Parts of this project — including code debugging, README formatting, and grammar correction — were supported with the help of ChatGPT. All outputs were carefully reviewed, edited, and finalized by me.
