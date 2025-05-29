@@ -159,6 +159,12 @@ I then plot the ROC curve to evaluate each model’s ability to distinguish stre
 
 ---
 
+## 👔 Standardizing the Data
+
+Before training my machine learning models, I standardize the dataset so that all features are on the same scale. This is especially important for models like KNN, SVM, and logistic regression, which are sensitive to feature magnitude.
+
+---
+
 ## 🏢 Multi-Model Comparison: Binary Stress Classification
 
 With the stress levels now grouped into a binary format (Stressed vs Not Stressed), I train and evaluate multiple machine learning models to identify students under significant stress.
@@ -293,7 +299,7 @@ Then I perform a stratified train-test split to maintain class balance in both s
 
 ## 🧪 Testing Pretrained Models on New Dataset
 
-After training models on the original dataset, I evaluate their performance on a new dataset collected separately. This process assesses the generalization ability of the models in detecting stress levels on unseen data.
+After training models on the original dataset, I evaluate their performance on a new dataset collected separately. This process assesses the generalization ability of the models in detecting stress levels on unseen data. Since I used XGBoost, I don't even have to standarize it.
 
 ![Logistic Regression ROC Curve](./models/logistic_regression_roc_curve2.png)
 
@@ -307,9 +313,9 @@ After training models on the original dataset, I evaluate their performance on a
 
 ## 🌍 Model Generalization to New Dataset
 
-The logistic regression model trained on the original dataset demonstrates strong performance when tested on the new dataset.
+The XGBoost model trained on the original dataset demonstrates strong performance when tested on the new dataset.
 
-- The **ROC curve** shows a high AUC score of **0.91**, indicating excellent discriminative ability between stressed and not stressed students.  
+- The **ROC curve** shows a high AUC score of **0.98**, indicating excellent discriminative ability between stressed and not stressed students.  
 - The **confusion matrix** reveals that the model correctly classifies the majority of cases, with relatively few misclassifications.
 
 These results confirm that the model generalizes well across datasets collected at different times, validating its robustness and practical applicability for stress level prediction in similar student populations.
